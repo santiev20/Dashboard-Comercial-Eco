@@ -13,7 +13,7 @@ st.set_page_config(
 st.title("📊 Dashboard Comercial")
 
 # Cargar un archivo Excel desde el equipo
-archivo_excel = st.file_uploader("Carga tu archivo Excel", type=["xlsx"])
+archivo_excel = st.file_uploader("Carga tu archivo Excel", type=["xlsm"])
 
 if archivo_excel:
     # Leer ambas hojas del archivo Excel
