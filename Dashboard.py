@@ -166,12 +166,6 @@ if archivo is not None:
             st.metric(label="💰 Total por enviar a facturar (POSIBLES)", value=f"${total_posibles:,.0f}")
             
             # Gráfico de línea de evolución
-            fig2 = px.line(
-                df_posibles_filtrado.sort_values('Fecha CC'),
-                x='Fecha CC',
-                y='Subtotal',
-                title='Ventas en el Tiempo - POSIBLES'
-            )
             fig2.update_layout(
                 xaxis_title='Fecha',
                 yaxis_title='Total Facturado ($)',
@@ -238,12 +232,6 @@ if archivo is not None:
 
         with col7:
             st.subheader("📈 Evolución de ventas en el tiempo (ENVIADOS)")
-            fig4 = px.line(
-                df_enviados_filtrado.sort_values('Dia'),
-                x='Dia',
-                y='Subtotal',
-                title='Ventas en el Tiempo - ENVIADOS'
-            )
             fig4.update_layout(xaxis_title='Fecha', yaxis_title='Total Facturado ($)', yaxis_tickformat=',.0f')
             st.plotly_chart(fig4)
 
