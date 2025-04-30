@@ -586,7 +586,7 @@ st.markdown("""
 
 
 # --- Carga de Archivo ---
-archivo = st.sidebar.file_uploader("📂 Sube el archivo Excel (.xlsm)", type=["xlsm"])
+archivo = st.sidebar.file_uploader("📂 Sube el archivo Excel (.xlsx)", type=["xlsx"])
 
 # Diccionario para mapear nombres esperados a los nombres/índices reales de las hojas
 # AJUSTA ESTOS NOMBRES SI LOS DE TU EXCEL SON DIFERENTES
